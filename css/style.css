@@ -572,6 +572,6 @@
 }
 @media (min-width: 431px) {
   body {
-    display: none;
+    display: none!important;
   }
 }
