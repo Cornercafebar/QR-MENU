@@ -578,17 +578,16 @@
       display: none;
     }
   }
-.beerevent{
+.event{
     width: 100%;
     height: 450px;
-    margin-bottom: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-.beerevent img{
+.event img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
