@@ -573,7 +573,7 @@
 .KB86P-sold {
     color: gray !important;
 }
-@media (min-width: 431px) {
+@media (min-width: 440px) {
     body {
       display: none;
     }
