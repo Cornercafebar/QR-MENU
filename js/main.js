@@ -1,132 +1,193 @@
-(function ($) {
-    "use strict";
+jQuery(document).ready(function($) {
 
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner();
-    
-    
-    // Initiate the wowjs
-    new WOW().init();
+	'use strict';
 
+      var owl = $("#owl-breakfast");
 
-    // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
-            $('.navbar').addClass('sticky-top shadow-sm');
-        } else {
-            $('.navbar').removeClass('sticky-top shadow-sm');
-        }
-    });
-    
-    
-    // Dropdown on mouse hover
-    const $dropdown = $(".dropdown");
-    const $dropdownToggle = $(".dropdown-toggle");
-    const $dropdownMenu = $(".dropdown-menu");
-    const showClass = "show";
-    
-    $(window).on("load resize", function() {
-        if (this.matchMedia("(min-width: 992px)").matches) {
-            $dropdown.hover(
-            function() {
-                const $this = $(this);
-                $this.addClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "true");
-                $this.find($dropdownMenu).addClass(showClass);
-            },
-            function() {
-                const $this = $(this);
-                $this.removeClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "false");
-                $this.find($dropdownMenu).removeClass(showClass);
-            }
-            );
-        } else {
-            $dropdown.off("mouseenter mouseleave");
-        }
-    });
-    
-    
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
+        owl.owlCarousel({
+          
+          pagination : true,
+          paginationNumbers: false,
+          autoPlay: 6000, //Set AutoPlay to 3 seconds
+          items : 2, //10 items above 1000px browser width
+          itemsDesktop : [1000,2], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,2], // betweem 900px and 601px
+          itemsTablet: [600,1], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+          
+      });
 
 
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
+      var owl = $("#owl-lunch");
+
+        owl.owlCarousel({
+          
+          pagination : true,
+          paginationNumbers: false,
+          autoPlay: 6000, //Set AutoPlay to 3 seconds
+          items : 2, //10 items above 1000px browser width
+          itemsDesktop : [1000,2], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,2], // betweem 900px and 601px
+          itemsTablet: [600,1], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+          
+      });
+      var owl = $("#owl-lunch2");
+
+        owl.owlCarousel({
+          
+          pagination : true,
+          paginationNumbers: false,
+          autoPlay: 6000, //Set AutoPlay to 3 seconds
+          items : 2, //10 items above 1000px browser width
+          itemsDesktop : [1000,2], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,2], // betweem 900px and 601px
+          itemsTablet: [600,1], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+        
+      });
+      var owl = $("#owl-lunch3");
+
+        owl.owlCarousel({
+          
+          pagination : true,
+          paginationNumbers: false,
+          autoPlay: 6000, //Set AutoPlay to 3 seconds
+          items : 2, //10 items above 1000px browser width
+          itemsDesktop : [1000,2], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,2], // betweem 900px and 601px
+          itemsTablet: [600,1], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+        
+      });
+      
 
 
-    // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
+      var owl = $("#owl-dinner");
+
+        owl.owlCarousel({
+          
+          pagination : true,
+          paginationNumbers: false,
+          autoPlay: 6000, //Set AutoPlay to 3 seconds
+          items : 2, //10 items above 1000px browser width
+          itemsDesktop : [1000,2], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,2], // betweem 900px and 601px
+          itemsTablet: [600,1], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+          
+      });
+      var owl = $("#owl-dinner2");
+
+        owl.owlCarousel({
+          
+          pagination : true,
+          paginationNumbers: false,
+          autoPlay: 6000, //Set AutoPlay to 3 seconds
+          items : 2, //10 items above 1000px browser width
+          itemsDesktop : [1000,2], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,2], // betweem 900px and 601px
+          itemsTablet: [600,1], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+          
+      });
+
+        var top_header = $('.parallax-content');
+        top_header.css({'background-position':'center center'}); // better use CSS
+
+        $(window).scroll(function () {
+        var st = $(this).scrollTop();
+        top_header.css({'background-position':'center calc(50% + '+(st*.5)+'px)'});
         });
-        console.log($videoSrc);
-
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
-    });
 
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: true,
-        margin: 24,
-        dots: true,
-        loop: true,
-        nav : false,
-        responsive: {
-            0:{
-                items:1
+        $('.counter').each(function() {
+          var $this = $(this),
+              countTo = $this.attr('data-count');
+          
+          $({ countNum: $this.text()}).animate({
+            countNum: countTo
+          },
+
+          {
+
+            duration: 8000,
+            easing:'linear',
+            step: function() {
+              $this.text(Math.floor(this.countNum));
             },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
+            complete: function() {
+              $this.text(this.countNum);
+              //alert('finished');
             }
-        }
-    });
-    
-})(jQuery);
 
-document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll(".KB86");
-    
-    elements.forEach(el => {
-        el.style.color = "gray";
-    });
+          });  
+          
+        });
+
+
+        $('.tabgroup > div').hide();
+        $('.tabgroup > div:first-of-type').show();
+        $('.tabs a').click(function(e){
+          e.preventDefault();
+            var $this = $(this),
+            tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+            others = $this.closest('li').siblings().children('a'),
+            target = $this.attr('href');
+        others.removeClass('active');
+        $this.addClass('active');
+        $(tabgroup).children('div').hide();
+        $(target).show();
+      
+        })
+
+
+
+        $(".pop-button").click(function () {
+            $(".pop").fadeIn(300);
+            
+        });
+
+        $(".pop > span").click(function () {
+            $(".pop").fadeOut(300);
+        });
+
+
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 100) {
+                $(".header").addClass("active");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+               $(".header").removeClass("active");
+            }
+        });
+
+
+	/************** Mixitup (Filter Projects) *********************/
+    	$('.projects-holder').mixitup({
+            effects: ['fade','grayscale'],
+            easing: 'snap',
+            transitionSpeed: 400
+        });
+
+
+
 });
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".KB86P").forEach(el => {
-        el.textContent = "Sold Out";
-        el.classList.add("KB86P-sold");
-    });
-});
+// Other
+function handleResponsive() {
+  for (let i = 1; i <= 6; i++) {
+      let el = document.getElementById("phonenone" + i);
+      if (el) {
+          el.style.display = window.innerWidth < 992 ? "none" : "block";
+      }
+  }
+}
+
+handleResponsive();
+window.addEventListener("resize", handleResponsive);
+
+// анх ачааллахад
+handleResponsive();
+
+// resize хийх болгонд
+window.addEventListener("resize", handleResponsive);

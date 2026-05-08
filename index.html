@@ -1,197 +1,449 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--
+Victory HTML CSS Template
+https://templatemo.com/tm-507-victory
+-->
+        <title>Corner QR menu Ver.2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<head>
-    <meta charset="utf-8">
-    <title>The Corner</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-    <!-- Favicon -->
-    <link href="./img/Untitled design.png" style="border-radius: 50%!important" rel="icon">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
 
 <body>
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
-
-
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-darkk px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"><img src="./img/corner-banner.png" alt="Logo"></h1>
-                    
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <!-- <a href="menu.html" class="nav-item nav-link">Food Menu</a> -->
-                        <a href="about.html" class="nav-item nav-link">Drink Menu</a>
-                        <a href="service.html" class="nav-item nav-link">Soon...</a>
-                        
-                    </div>
+    <div class="header">
+        <div class="container">
+            <a href="#" class="navbar-brand scroll-top">The Corner</a>
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Our Menus</a></li>
+                        <li><a href="menu.html#cafe-menu-section">Drink Cafe &amp; Bar</a></li>
+                        <!-- <li><a href="blog.html">Blog Entries</a></li> -->
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
             </nav>
-
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container my-5 py-5">
-                    <div class="row align-items-center g-5">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <p class="display-3 text-white animated slideInLeft" style="color: black; font-size: 30px;">HELLO!  <br> <a href="./about.html">QR Menu</a> </p>
-                            <p class="text-white animated slideInLeft mb-4 pb-2"style="color: black;" >Энэхүү QR Menu хөгжүүлэлт, туршилтын зорилгоор болно</p>
-                        </div>
-                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                            <img class="img-fluid" style=" border-radius: 50%; " src="./img/corner-reallogo.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!--/.navbar-->
         </div>
-        <!-- Navbar & Hero End -->
-
-        <!-- <div class="event">
-            <img src="./img/1.jpg" alt="">
-        </div>
-        <div class="event">
-            <img src="./img/OMOG TSENHER EGSHIGLEN.jpg" alt="">
-        </div>
-        <div class="event">
-            <img src="./img/Special I.jpg" alt="">
-        </div>
-        <div class="event">
-            <img src="./img/Special II.jpg" alt="">
-        </div>
-        <div class="event">
-            <img src="./img/Special III.jpg" alt="">
-        </div>
-        <div class="event">
-            <img src="./img/Special IV.jpg" alt="">
-        </div>
-        <div class="event">
-            <img src="./img/Special V.jpg" alt="">
-        </div> -->
-        <!-- Service Start -->
-        <!-- Service End -->
-
-
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
-                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>The Corner</h1>
-                        <p class="mb-4">Бид cafe & bar хослуулсан бөгөөд Кофе болон Алкохолны соёлыг оруулж ирэхийг зориж байгаа бөгөөд одоогоор Монголд танигдаад удаагүй олон улсын алдартай Tequila, Gin, Rum, Whiskey, Mezical уудыг танд санал болгож байна</p>
-                        <p class="mb-4">Мөн доод зааландаа 11ширээ 30-40 хүний багтаамж, Дээд зааландаа 2 VIP өрөө 4 ширээ. Олон улсын тоглолтуудыг өрөөний дэлгэцнээ гаргах болон тогтмол төрсөн өдөр баярын арга хэмжээ, Event зэргийг хүлээн авч, зохион байгуулж байна</p>
-                        <div class="row g-4 mb-4">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Menu Start -->
-
-        <!-- Menu End -->
-
-
-        <!-- Reservation Start -->
-        <!-- Reservation Start -->
-
-
-        <!-- Team Start -->
-        <!-- Team End -->
-
-
-        <!-- Testimonial Start -->
-        <!-- Testimonial End -->
-        
-
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Our Company</h4>
-                        <a class="btn btn-link" href="https://www.instagram.com/thecorner.cafebar/">The Corner /Instagram/</a>
-                        <a class="btn btn-link" href="https://www.facebook.com/profile.php?id=100064049770194">ZÜ Wine lounge /Facebook/ </a>
-                        <a class="btn btn-link" href="https://www.instagram.com/zu_lounge/ ">ZÜ Wine lounge /Instagram/</a>
-                        <a class="btn btn-link" href="https://www.instagram.com/zenn_ub/">ZENN Japanese dining /Instagram/</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact & Location</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><a href="https://maps.app.goo.gl/4zwZnf4gYNVqZjhp7">Байршил</a></p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+976 88817733</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
-                        <h5 class="text-light fw-normal">Monday - Friday</h5>
-                        <p>08AM - 00AM</p>
-                        <h5 class="text-light fw-normal">Saturday, Sunday</h5>
-                        <p>09AM - 00AM</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">The Corner</a>, All Right Reserved. <br> Бүх мэдээлэл албан ёсны эрхээр хамгаалагдсан.
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <!--/.container-->
     </div>
+    <!--/.header-->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Template Javascript -->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h4>Here you can find delecious foods and special drinks</h4>
+                    <h2>Café & Cocktail Bar</h2>
+                    <p>Everything's possible at The Corner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="our-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>Our blog post</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="blog-post">
+                        <img src="./img/qrHeineken 2+1.jpg" alt="">
+                        <div class="date">Active</div>
+                        <div class="right-content">
+                            <h4>Heineken Draught Beer 2+1</h4>
+                            <span>Branding, Collabing APU</span>
+                            <p>Buy two, get one free <br>Heineken задгай шар айраг 2+1 урамшуулалтай зарагдаж байна</p>
+                            <!-- <div class="text-button">
+                                <a href="#">Continue Reading</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-post">
+                        <img src="./img/qrDJposter.jpg" alt="">
+                        <div class="right-content">
+                            <h4>Special Days</h4>
+                            <span>President DJ / Bartender specials</span>
+                            <p>Бид Баасан гариг бүр эсвэл аль ч өдөр байж болно... Уух зүйлсийн урамшуулал, DJ Mix танд зориулж байна</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-post">
+                        <img src="./img/qrClassicCraft.jpg" alt="">
+                        <div class="right-content">
+                            <h4>Taste the night!</h4>
+                            <span>Cocktail bar service</span>
+                            <p>Бид Classic, Craft хамтад нь 26төрлийн коктейлийг зориулж байна. Эсвэл таны хүссэн амтыг бид өгөх болно </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-post">
+                        <img src="./img/qrLatte.jpg" alt="">
+                        <div class="right-content">
+                            <h4>Cafe</h4>
+                            <span>Working / Chilling</span>
+                            <p>Танд мөн найз нөхдөөрөө яриа өрнүүлэх, ажиллах, төвлөрөх оронзай, тайван орчиныг олгож байна</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="menu-categories home-menu-categories">
+        <div class="container">
+            <div class="menu-category-list">
+                <div class="menu-category-item">
+                    <a href="menu.html#breakfast-section">
+                        <img src="./img/qrBreakfastff.jpg" alt="Full English Breakfast">
+                        <h4>Breakfast</h4>
+                    </a>
+                </div>
+                <div class="menu-category-item">
+                    <a href="menu.html#main-dish-section">
+                        <img src="./img/qrBUrger.jpg" alt="Main dish">
+                        <h4>Main Dish</h4>
+                    </a>
+                </div>
+                <div class="menu-category-item">
+                    <a href="menu.html#pasta-section">
+                        <img src="./img/qrsteakpasta.jpg" alt="Pasta">
+                        <h4>Pasta</h4>
+                    </a>
+                </div>
+                <div class="menu-category-item">
+                    <a href="menu.html#pizza-section">
+                        <img src="./img/qrSalmonpizza.jpg" alt="Pizza">
+                        <h4>Pizza</h4>
+                    </a>
+                </div>
+                <div class="menu-category-item">
+                    <a href="menu.html#chicken-platter-section">
+                        <img src="./img/qrmeatplatter.jpg" alt="Chicken and platter">
+                        <h4>Chicken &amp; Platter</h4>
+                    </a>
+                </div>
+                <div class="menu-category-item">
+                    <a href="menu.html#dessert-section">
+                        <img src="./img/qrPudding.jpg" alt="Dessert">
+                        <h4>Dessert</h4>
+                    </a>
+                </div>
+                <div class="menu-category-item">
+                    <a href="menu.html#cafe-menu-section">
+                        <img src="./img/qrLatte.jpg" alt="Cafe menu">
+                        <h4>Drink Cafe &amp; Bar</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cook-delecious">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="first-image">
+                        <img src="img/cook_01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cook-content">
+                        <h4>Reservation</h4>
+                        <div class="contact-content">
+                            <span>You can call us on:</span>
+                            <h6>+976 6617-2677</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="second-image">
+                        <img src="img/cook_02.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- BOOKING -->
+ <!-- BOOKING -->
+  <!-- BOOKING -->
+   <!-- BOOKING -->
+    <!-- BOOKING -->
+    <!-- <section id="book-table">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>Book Your Table Now</h2>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-offset-2 col-sm-12">
+                    <div class="left-image">
+                        <img src="img/book_left_image.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="right-info">
+                        <h4>Reservation</h4>
+                        <form id="form-submit" action="" method="get">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <select required name='day' onchange='this.form.()'>
+                                            <option value="">Select day</option>
+                                            <option value="Monday">Monday</option>
+                                            <option value="Tuesday">Tuesday</option>
+                                            <option value="Wednesday">Wednesday</option>
+                                            <option value="Thursday">Thursday</option>
+                                            <option value="Friday">Friday</option>
+                                            <option value="Saturday">Saturday</option>
+                                            <option value="Sunday">Sunday</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <select required name='hour' onchange='this.form.()'>
+                                            <option value="">Select hour</option>
+                                            <option value="10-00">10:00</option>
+                                            <option value="12-00">12:00</option>
+                                            <option value="14-00">14:00</option>
+                                            <option value="16-00">16:00</option>
+                                            <option value="18-00">18:00</option>
+                                            <option value="20-00">20:00</option>
+                                            <option value="22-00">22:00</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input name="name" type="name" class="form-control" id="name" placeholder="Full name" required="">
+                                    </fieldset> 
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input name="phone" type="phone" class="form-control" id="phone" placeholder="Phone number" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <select required class="person" name='persons' onchange='this.form.()'>
+                                            <option value="">How many persons?</option>
+                                            <option value="1-Person">1 Person</option>
+                                            <option value="2-Persons">2 Persons</option>
+                                            <option value="3-Persons">3 Persons</option>
+                                            <option value="4-Persons">4 Persons</option>
+                                            <option value="5-Persons">5 Persons</option>
+                                            <option value="6-Persons">6 Persons</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="btn">Book Table</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+<!-- POPULAR FOOD -->
+ <!-- POPULAR FOOD -->
+  <!-- POPULAR FOOD -->
+   <!-- POPULAR FOOD -->
+    <!-- POPULAR FOOD -->
+    <!-- <section class="featured-food">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    <h2>Weekly Featured Food</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <h2>Breakfast</h2>
+                        <img src="img/qrBreakfastff.jpg" alt="">
+                        <div class="price">$4.50</div>
+                        <div class="text-content">
+                            <h4>Kale Chips Art Party</h4>
+                            <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean shorts hexagon street art knausgaard wolf...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <h2>Lunch</h2>
+                        <img src="img/lunch_item.jpg" alt="">
+                        <div class="price">$7.50</div>
+                        <div class="text-content">
+                            <h4>Taiyaki Gastro Tousled</h4>
+                            <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean shorts hexagon street art knausgaard wolf...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="food-item">
+                        <h2>Dinner</h2>
+                        <img src="img/dinner_item.jpg" alt="">
+                        <div class="price">$12.50</div>
+                        <div class="text-content">
+                            <h4>Batch Squid Jean Shorts</h4>
+                            <p>Dreamcatcher squid ennui cliche chicharros nes echo  small batch jean shorts hexagon street art knausgaard wolf...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+<!-- SIGN UP -->
+ <!-- SIGN UP -->
+  <!-- SIGN UP -->
+   <!-- SIGN UP -->
+    <!-- <section class="sign-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>Signup for our newsletters</h2>
+                    </div>
+                </div>
+            </div>
+            <form id="contact" action="" method="get">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-3">
+                        <fieldset>
+                            <input name="email" type="text" class="form-control" id="email" placeholder="Enter your email here..." required="">
+                        </fieldset>
+                    </div>
+                    <div class="col-md-2">
+                        <fieldset>
+                            <button type="submit" id="form-submit" class="btn">Send Message</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section> -->
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>C &copy; 2026 </p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p>The Corner</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-</body>
 
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
 </html>
