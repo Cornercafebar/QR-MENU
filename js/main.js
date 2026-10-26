@@ -186,7 +186,6 @@ function handleResponsive() {
 handleResponsive();
 window.addEventListener("resize", handleResponsive);
 
-// анх ачааллахад
 handleResponsive();
 
 // resize хийх болгонд
